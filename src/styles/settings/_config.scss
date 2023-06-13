@@ -1,0 +1,17 @@
+/* ==================== Colors ==================== */
+
+$background-color: #171717;
+$primary-text-font: #f1f1f1;
+
+/* ================== Typography ================== */
+
+$font-family: "Nunito Sans", sans-serif;
+
+/* ================= Breakpoints ================== */
+
+$breakpoints: (
+    "m": 768px,
+    "l": 1024px,
+    "xl": 1200px,
+    "xxl": 1600px,
+);
