@@ -7,13 +7,6 @@
         "skipLibCheck": true,
 
         "baseUrl": ".",
-        "paths": {
-            "@src/*": ["src/*"],
-            "@components/*": ["src/components/*"],
-            "@assets/*": ["src/assets/*"],
-            "@pages/*": ["src/pages/*"],
-            "@styles/*": ["src/styles/*"]
-        },
 
         /* Bundler mode */
         "moduleResolution": "bundler",
@@ -25,9 +18,20 @@
 
         /* Linting */
         "strict": true,
+        "strictNullChecks": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "strictFunctionTypes": true,
+
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noUncheckedIndexedAccess": true,
+
+        "forceConsistentCasingInFileNames": true
     },
     "include": ["src"],
     "references": [{ "path": "./tsconfig.node.json" }]
