@@ -1,13 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
-    return;
-    <>
-        <div>
-            <h1>projects summer 2023</h1>
-            <ul>
-                <li>game state screen transitions</li>
-            </ul>
-        </div>
-    </>;
+    return (
+        <>
+            <nav className="home-container">
+                <h1>projects summer 2023</h1>
+                <ul className="projects">
+                    <li>
+                        <Link to="/games">game state screen transitions</Link>
+                    </li>
+                    <li>
+                        <Link to="/parallax">parallax</Link>
+                    </li>
+                    <li>
+                        <Link to="/three-dim">three-dimensional assets</Link>
+                    </li>
+                </ul>
+            </nav>
+        </>
+    );
 }

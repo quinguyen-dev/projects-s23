@@ -1,10 +1,17 @@
-@use "./settings/config" as *;
+@use "styles/settings" as *;
+
+@forward "src/pages/Home/Home";
 
 html {
-    background-color: $background-color;
     box-sizing: border-box;
-
     font-family: $font-family;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background-color;
+    color: $primary-font-color;
 }
 
 h1,
@@ -13,5 +20,10 @@ h3,
 h4,
 h5,
 h6 {
+    color: $header-font-color;
     font-weight: bold;
+}
+
+a {
+    color: $primary-font-color;
 }
