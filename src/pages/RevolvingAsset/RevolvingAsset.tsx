@@ -30,7 +30,7 @@ export default function RevolvingAsset() {
             <Canvas>
                 <RotatingTorusWireframe />
                 <ambientLight />
-                <directionalLight color="white" position={[0, 100, 20]} />
+                <directionalLight position={[0, 100, 20]} />
             </Canvas>
         </div>
     );
