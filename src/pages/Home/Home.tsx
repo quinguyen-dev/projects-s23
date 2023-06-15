@@ -13,7 +13,7 @@ export default function Home() {
                         <Link to="/parallax">parallax</Link>
                     </li>
                     <li>
-                        <Link to="/three-dim">three-dimensional assets</Link>
+                        <Link to="/revolving-asset">revolving asset</Link>
                     </li>
                 </ul>
             </nav>
