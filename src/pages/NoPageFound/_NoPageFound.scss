@@ -1,0 +1,8 @@
+@use "styles/settings" as *;
+
+.no-page-container {
+    @include center-content;
+
+    flex-direction: column;
+    height: 100vh;
+}
