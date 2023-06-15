@@ -4,4 +4,8 @@
     list-style: none;
 }
 
-$test-color: red;
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

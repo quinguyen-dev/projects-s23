@@ -1,6 +1,9 @@
 @use "styles/settings" as *;
 
 @forward "src/pages/Home/Home";
+@forward "src/pages/NoPageFound/NoPageFound";
+
+/* TODO Look into moving this code into a partial */
 
 html {
     box-sizing: border-box;
@@ -26,4 +29,17 @@ h6 {
 
 a {
     color: $primary-font-color;
+
+    &.button {
+        text-decoration: none;
+    }
+}
+
+button,
+.button {
+    color: $primary-btn-text-color;
+    font-family: $font-family;
+
+    padding: 10px 16px;
+    border-radius: 6px;
 }
