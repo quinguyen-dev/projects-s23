@@ -1,6 +1,7 @@
 import React, { Profiler, ProfilerOnRenderCallback } from "react";
 import {
     Route,
+    Routes,
     RouterProvider,
     createBrowserRouter,
     createRoutesFromElements,
@@ -8,7 +9,11 @@ import {
 import { Home } from "src/pages";
 
 const router = createBrowserRouter(
-    createRoutesFromElements(<Route path="/" element={<Home />} />)
+    createRoutesFromElements(
+        <Route path="/" element={<Home />}>
+            <Route path="*" element={<Home />} />
+        </Route>
+    )
 );
 
 export default function App() {
