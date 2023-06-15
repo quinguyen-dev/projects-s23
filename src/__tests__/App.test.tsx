@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "src/App";
-import { MemoryRouter } from "react-router-dom";
 
 describe("App", () => {
-    it("should render correctly", () => {
-        const component = render(<App />);
-        expect(component).toMatchSnapshot();
+    it("should render to the home page", () => {
+        render(<App />);
+
+        expect(screen.getByText(/projects summer 2023/i)).toBeInTheDocument();
     });
 });

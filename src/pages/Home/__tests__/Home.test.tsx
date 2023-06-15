@@ -1,14 +1,10 @@
 import { render } from "@testing-library/react";
 import Home from "../Home";
-import { MemoryRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 describe("Home Screen", () => {
     it("should render correctly", () => {
-        const component = render(
-            <MemoryRouter initialEntries={["/"]}>
-                <Home />
-            </MemoryRouter>
-        );
+        const component = render(<Home />, { wrapper: BrowserRouter });
         expect(component).toMatchSnapshot();
     });
 });
