@@ -3,6 +3,7 @@ import { useRef } from "react";
 /* https://docs.pmnd.rs/react-three-fiber/tutorials/basic-animations */
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Mesh } from "three";
+import { OrbitControls } from "@react-three/drei";
 
 function RotatingTorusWireframe() {
     const mesh = useRef<Mesh>(null!);
@@ -11,9 +12,9 @@ function RotatingTorusWireframe() {
         camera.position.z = 40;
     });
 
-    useFrame(({ clock }) => {
-        mesh.current.rotation.x = clock.getElapsedTime() * 0.5;
-        mesh.current.rotation.y = clock.getElapsedTime() * 0.1;
+    useFrame((state, delta) => {
+        mesh.current.rotation.x += delta * 0.5;
+        mesh.current.rotation.y += delta * 0.1;
     });
 
     return (
@@ -31,6 +32,7 @@ export default function RevolvingAsset() {
                 <RotatingTorusWireframe />
                 <ambientLight />
                 <directionalLight position={[0, 100, 20]} />
+                <OrbitControls />
             </Canvas>
         </div>
     );
