@@ -11,4 +11,4 @@ export default function RevolvingAsset() {
             </Canvas>
         </div>
     );
-}
+} /* TODO look to add Suspense here */
