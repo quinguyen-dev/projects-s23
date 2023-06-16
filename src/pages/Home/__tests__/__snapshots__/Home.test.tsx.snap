@@ -30,9 +30,9 @@ exports[`Home Screen > should render correctly 1`] = `
           </li>
           <li>
             <a
-              href="/three-dim"
+              href="/revolving-asset"
             >
-              three-dimensional assets
+              revolving asset
             </a>
           </li>
         </ul>
@@ -65,9 +65,9 @@ exports[`Home Screen > should render correctly 1`] = `
         </li>
         <li>
           <a
-            href="/three-dim"
+            href="/revolving-asset"
           >
-            three-dimensional assets
+            revolving asset
           </a>
         </li>
       </ul>
