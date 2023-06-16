@@ -2,11 +2,10 @@
 
 @forward "src/pages/Home/Home";
 @forward "src/pages/NoPageFound/NoPageFound";
+@forward "src/pages/RevolvingAsset/RevolvingAsset";
 
 /* TODO Look into moving this code into a partial */
-
 html {
-    box-sizing: border-box;
     font-family: $font-family;
 
     scroll-behavior: smooth;

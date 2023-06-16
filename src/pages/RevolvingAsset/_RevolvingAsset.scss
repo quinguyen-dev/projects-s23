@@ -1,0 +1,9 @@
+@use "styles/settings" as *;
+
+.ra-container {
+    @include center-content;
+
+    background: $radial-background;
+
+    height: 100vh;
+}

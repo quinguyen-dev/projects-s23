@@ -1,9 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home, NoPageFound } from "src/pages";
+import { Home, NoPageFound, RevolvingAsset } from "src/pages";
 
 const router = createBrowserRouter([
     { index: true, Component: Home },
     { path: "*", Component: NoPageFound },
+    { path: "revolving-asset", Component: RevolvingAsset },
 ]);
 
 export default function App() {
