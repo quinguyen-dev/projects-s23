@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
     return (
         <>
-            <nav className="home-container">
+            <nav>
                 <h1>projects summer 2023</h1>
                 <ul className="projects">
                     <li>
