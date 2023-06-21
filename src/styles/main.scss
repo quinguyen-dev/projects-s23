@@ -42,3 +42,9 @@ button,
     padding: 10px 16px;
     border-radius: 6px;
 }
+
+.parent {
+    @include center-content;
+
+    height: 100vh;
+}
