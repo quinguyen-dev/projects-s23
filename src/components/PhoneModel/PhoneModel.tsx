@@ -1,6 +1,8 @@
+import { useRef } from "react";
 import { useGLTF, Html } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 import Page from "./Page";
+import { Mesh } from "three";
 
 type GLTFResult = GLTF & {
     nodes: {
@@ -11,13 +13,15 @@ type GLTFResult = GLTF & {
 };
 
 export default function PhoneModel(props: JSX.IntrinsicElements["group"]) {
+    const mesh = useRef<Mesh>(null!);
+
     const { nodes, materials } = useGLTF(
         "/src/assets/gltf/phone.glb"
     ) as GLTFResult;
     return (
         <group {...props} dispose={null}>
             <mesh
-                castShadow
+                ref={mesh}
                 receiveShadow
                 geometry={nodes.Ellipse_2.geometry}
                 material={nodes.Ellipse_2.material}
@@ -25,17 +29,16 @@ export default function PhoneModel(props: JSX.IntrinsicElements["group"]) {
                 scale={0.008}
             >
                 <Html
+                    className="phone"
                     transform
-                    occlude
-                    position={[0.22, 1.897, 0.174]}
-                    style={{ backgroundColor: "red" }}
-                    distanceFactor={300}
+                    position={[-28, -240, -1]}
+                    scale={19.5}
                 >
                     <Page />
                 </Html>
             </mesh>
+
             <mesh
-                castShadow
                 receiveShadow
                 geometry={nodes.Cube_2.geometry}
                 material={nodes.Cube_2.material}
