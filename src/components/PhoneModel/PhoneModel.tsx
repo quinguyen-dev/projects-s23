@@ -31,6 +31,7 @@ export default function PhoneModel(props: JSX.IntrinsicElements["group"]) {
                 <Html
                     className="phone"
                     transform
+                    occlude
                     position={[-28, -240, -1]}
                     scale={19.5}
                 >
