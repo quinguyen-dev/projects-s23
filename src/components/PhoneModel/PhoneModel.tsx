@@ -15,9 +15,8 @@ type GLTFResult = GLTF & {
 export default function PhoneModel(props: JSX.IntrinsicElements["group"]) {
     const mesh = useRef<Mesh>(null!);
 
-    const { nodes, materials } = useGLTF(
-        "/src/assets/gltf/phone.glb"
-    ) as GLTFResult;
+    const { nodes } = useGLTF("/src/assets/gltf/phone.glb") as GLTFResult;
+
     return (
         <group {...props} dispose={null}>
             <mesh

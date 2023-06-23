@@ -16,7 +16,7 @@ export default function Home() {
                         <Link to="/revolving-asset">revolving asset</Link>
                     </li>
                     <li>
-                        <Link to="/html-render">html on 3d component</Link>
+                        <Link to="/html-render">phone render</Link>
                     </li>
                 </ul>
             </nav>
