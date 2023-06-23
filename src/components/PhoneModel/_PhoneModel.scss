@@ -1,0 +1,26 @@
+@use "styles/settings" as *;
+
+/* TODO: kinda messy */
+.phone {
+    user-select: none;
+    overflow-y: hidden;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    &-container {
+        @include center-content;
+
+        align-items: start;
+        flex-direction: column;
+
+        background-color: $background-color;
+
+        border-radius: 70px;
+        width: 512px;
+        height: 1080px;
+
+        padding: 48px;
+    }
+}

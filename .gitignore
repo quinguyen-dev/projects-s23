@@ -16,6 +16,8 @@ jspm_packages/
 # Distribution directories
 dist/
 
+.vscode
+
 # Typescript v1 declaration files
 typings/
 

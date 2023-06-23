@@ -6,7 +6,7 @@ import {
     useLocation,
 } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Home, NoPageFound, RevolvingAsset } from "src/pages";
+import { Home, HtmlRender, NoPageFound, RevolvingAsset } from "src/pages";
 
 function AnimatedOutlet() {
     const o = useOutlet();
@@ -40,6 +40,7 @@ const router = createBrowserRouter([
         children: [
             { index: true, Component: Home },
             { path: "revolving-asset", Component: RevolvingAsset },
+            { path: "html-render", Component: HtmlRender },
             { path: "*", Component: NoPageFound },
         ],
     },
