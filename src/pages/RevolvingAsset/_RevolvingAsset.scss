@@ -1,7 +1,5 @@
 @use "styles/settings" as *;
 
 .ra-container {
-    @include center-content;
-
     background: radial-gradient(#2d2d2d, $background-color);
 }

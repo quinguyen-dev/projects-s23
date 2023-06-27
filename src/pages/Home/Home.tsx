@@ -26,6 +26,14 @@ export default function Home() {
             <nav>
                 <ul className="projects">
                     <li>
+                        <a href="https://quinguyen-dev.github.io">
+                            <span>Portfolio v1 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <AnimatedLink to="/error">Portfolio v2</AnimatedLink>
+                    </li>
+                    <li>
                         <AnimatedLink to="/html-render">
                             HTML Phone Render
                         </AnimatedLink>
@@ -37,12 +45,7 @@ export default function Home() {
                     </li>
                     <li>
                         <AnimatedLink to="/parallax">
-                            Parallax Scrolling
-                        </AnimatedLink>
-                    </li>
-                    <li>
-                        <AnimatedLink to="/games">
-                            Screen Transitions
+                            Parallax Scrolling with Framer
                         </AnimatedLink>
                     </li>
                 </ul>
