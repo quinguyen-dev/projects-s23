@@ -5,83 +5,125 @@ exports[`Home Screen > should render correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <nav>
+      <div
+        class="home"
+      >
         <h1>
-          projects summer 2023
+          Projects Summer 2023
         </h1>
+        <nav>
+          <ul
+            class="projects"
+          >
+            <li>
+              <a
+                href="https://quinguyen-dev.github.io"
+              >
+                <span>
+                  Portfolio v1 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/error"
+              >
+                <span>
+                  Portfolio v2
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/html-render"
+              >
+                <span>
+                  HTML Phone Render
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/revolving-asset"
+              >
+                <span>
+                  Basic Revolving Torus Knot
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/parallax"
+              >
+                <span>
+                  Parallax Scrolling with Framer
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="home"
+    >
+      <h1>
+        Projects Summer 2023
+      </h1>
+      <nav>
         <ul
           class="projects"
         >
           <li>
             <a
-              href="/games"
+              href="https://quinguyen-dev.github.io"
             >
-              game state screen transitions
+              <span>
+                Portfolio v1 
+              </span>
             </a>
           </li>
           <li>
             <a
-              href="/parallax"
+              href="/error"
             >
-              parallax
-            </a>
-          </li>
-          <li>
-            <a
-              href="/revolving-asset"
-            >
-              revolving asset
+              <span>
+                Portfolio v2
+              </span>
             </a>
           </li>
           <li>
             <a
               href="/html-render"
             >
-              phone render
+              <span>
+                HTML Phone Render
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/revolving-asset"
+            >
+              <span>
+                Basic Revolving Torus Knot
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/parallax"
+            >
+              <span>
+                Parallax Scrolling with Framer
+              </span>
             </a>
           </li>
         </ul>
       </nav>
     </div>
-  </body>,
-  "container": <div>
-    <nav>
-      <h1>
-        projects summer 2023
-      </h1>
-      <ul
-        class="projects"
-      >
-        <li>
-          <a
-            href="/games"
-          >
-            game state screen transitions
-          </a>
-        </li>
-        <li>
-          <a
-            href="/parallax"
-          >
-            parallax
-          </a>
-        </li>
-        <li>
-          <a
-            href="/revolving-asset"
-          >
-            revolving asset
-          </a>
-        </li>
-        <li>
-          <a
-            href="/html-render"
-          >
-            phone render
-          </a>
-        </li>
-      </ul>
-    </nav>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
