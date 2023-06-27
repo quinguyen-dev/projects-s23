@@ -3,7 +3,7 @@ import { RevolvingTorusKnot } from "src/components";
 
 export default function RevolvingAsset() {
     return (
-        <Canvas>
+        <Canvas className="ra-container">
             <RevolvingTorusKnot />
             <ambientLight intensity={0.1} />
             <spotLight position={[-50, 50, -50]} />

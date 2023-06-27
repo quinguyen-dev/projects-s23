@@ -6,7 +6,13 @@ import {
     useLocation,
 } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Home, HtmlRender, NoPageFound, RevolvingAsset } from "src/pages";
+import {
+    Home,
+    HtmlRender,
+    NoPageFound,
+    RevolvingAsset,
+    Parallax,
+} from "src/pages";
 
 function AnimatedOutlet() {
     const o = useOutlet();
@@ -32,7 +38,7 @@ function RootLayout() {
             </motion.div>
         </AnimatePresence>
     );
-}
+} /* TODO: change to { m } */
 
 const router = createBrowserRouter([
     {
@@ -41,6 +47,7 @@ const router = createBrowserRouter([
             { index: true, Component: Home },
             { path: "revolving-asset", Component: RevolvingAsset },
             { path: "html-render", Component: HtmlRender },
+            { path: "parallax", Component: Parallax },
             { path: "*", Component: NoPageFound },
         ],
     },

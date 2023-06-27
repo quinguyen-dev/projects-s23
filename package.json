@@ -13,8 +13,8 @@
     "dependencies": {
         "@react-three/drei": "^9.74.16",
         "@react-three/fiber": "^8.13.3",
-        "@types/three": "^0.152.1",
         "framer-motion": "^10.12.16",
+        "normalize.css": "^8.0.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.12.1",
@@ -28,6 +28,7 @@
         "@types/node": "^20.3.1",
         "@types/react": "^18.0.37",
         "@types/react-dom": "^18.0.11",
+        "@types/three": "^0.152.1",
         "@typescript-eslint/eslint-plugin": "^5.60.0",
         "@typescript-eslint/parser": "^5.59.0",
         "@vitejs/plugin-react-swc": "^3.0.0",

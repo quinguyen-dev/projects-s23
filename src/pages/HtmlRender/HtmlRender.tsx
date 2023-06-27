@@ -4,7 +4,7 @@ import { PhoneModel } from "src/components";
 
 export default function HtmlRender() {
     return (
-        <Canvas camera={{ position: [5, 0, 0] }}>
+        <Canvas className="html-container" camera={{ position: [5, 0, 0] }}>
             <group rotation={[0, Math.PI / 3, 0]}>
                 <Float
                     speed={5}
