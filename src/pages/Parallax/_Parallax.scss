@@ -1,0 +1,19 @@
+@use "styles/settings" as *;
+
+.parallax {
+    @include fill-parent;
+
+    h1 {
+        font-size: 10vw;
+        text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.3);
+
+        transform: translateY(-75%);
+    }
+
+    &-section {
+        @include center-content;
+
+        min-height: 100vh;
+        overflow: auto;
+    }
+}

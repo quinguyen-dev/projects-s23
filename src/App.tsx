@@ -5,8 +5,14 @@ import {
     useOutlet,
     useLocation,
 } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
-import { Home, HtmlRender, NoPageFound, RevolvingAsset } from "src/pages";
+import { AnimatePresence, m } from "framer-motion";
+import {
+    Home,
+    HtmlRender,
+    NoPageFound,
+    RevolvingAsset,
+    Parallax,
+} from "src/pages";
 
 function AnimatedOutlet() {
     const o = useOutlet();
@@ -20,7 +26,7 @@ function RootLayout() {
 
     return (
         <AnimatePresence mode="wait">
-            <motion.div
+            <m.div
                 className="parent"
                 key={location.pathname}
                 initial={{ opacity: 0 }}
@@ -29,7 +35,7 @@ function RootLayout() {
                 exit={{ opacity: 0 }}
             >
                 <AnimatedOutlet />
-            </motion.div>
+            </m.div>
         </AnimatePresence>
     );
 }
@@ -41,6 +47,7 @@ const router = createBrowserRouter([
             { index: true, Component: Home },
             { path: "revolving-asset", Component: RevolvingAsset },
             { path: "html-render", Component: HtmlRender },
+            { path: "parallax", Component: Parallax },
             { path: "*", Component: NoPageFound },
         ],
     },
