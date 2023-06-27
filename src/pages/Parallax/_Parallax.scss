@@ -1,18 +1,25 @@
 @use "styles/settings" as *;
 
+$parallax-header-color: #34517a;
+$parallax-text-color: #4f6079;
+$parallax-background: linear-gradient(#c2daff, #ebf5ff);
+
 .parallax {
     @include fill-parent;
 
+    background: $parallax-background;
+
+    h1,
+    h2 {
+        color: $parallax-text-color;
+    }
+
     h1 {
         font-size: 10vw;
-        text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.3);
-
-        transform: translateY(-75%);
+        font-weight: 800;
     }
 
     &-section {
-        @include center-content;
-
         min-height: 100vh;
         overflow: auto;
     }

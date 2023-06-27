@@ -27,6 +27,13 @@ h5,
 h6 {
     color: $header-font-color;
     font-weight: bold;
+
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 a {

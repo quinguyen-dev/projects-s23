@@ -5,7 +5,7 @@ import {
     useOutlet,
     useLocation,
 } from "react-router-dom";
-import { AnimatePresence, m } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
     Home,
     HtmlRender,
@@ -26,7 +26,7 @@ function RootLayout() {
 
     return (
         <AnimatePresence mode="wait">
-            <m.div
+            <motion.div
                 className="parent"
                 key={location.pathname}
                 initial={{ opacity: 0 }}
@@ -35,10 +35,10 @@ function RootLayout() {
                 exit={{ opacity: 0 }}
             >
                 <AnimatedOutlet />
-            </m.div>
+            </motion.div>
         </AnimatePresence>
     );
-}
+} /* TODO: change to { m } */
 
 const router = createBrowserRouter([
     {
