@@ -7,7 +7,7 @@ export default function Parallax() {
 
     return (
         <div className="parallax">
-            <motion.section className="hero">
+            <section className="hero">
                 <motion.h1 style={{ y: headerOffset }}>
                     Achieve new heights.
                 </motion.h1>
@@ -15,7 +15,7 @@ export default function Parallax() {
                     className="mountain"
                     src="/src/assets/images/mountain.png"
                 />
-            </motion.section>
+            </section>
             <section className="content">
                 <h2>Sign up today.</h2>
                 <p>
