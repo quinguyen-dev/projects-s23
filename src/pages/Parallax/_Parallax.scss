@@ -1,26 +1,115 @@
 @use "styles/settings" as *;
 
-$parallax-header-color: #34517a;
-$parallax-text-color: #4f6079;
-$parallax-background: linear-gradient(#c2daff, #ebf5ff);
-
 .parallax {
     @include fill-parent;
 
-    background: $parallax-background;
-
     h1,
     h2 {
-        color: $parallax-text-color;
+        color: #34517a;
     }
 
     h1 {
-        font-size: 10vw;
+        font-size: 8rem;
         font-weight: 800;
     }
 
-    &-section {
-        min-height: 100vh;
-        overflow: auto;
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-weight: 300;
+    }
+
+    p {
+        color: #4f6079;
+        font-size: 24px;
+    }
+
+    & > * {
+        position: relative;
+    }
+
+    footer {
+        background-color: #1b2a41;
+        padding: 60px 40px 30px 60px;
+    }
+
+    hr {
+        border: 0.5px solid #495567;
+        margin: 60px 0px 30px;
+    }
+
+    button {
+        border: none;
+        border-radius: 8px;
+        height: 40px;
+        font-weight: 600;
+    }
+
+    button.primary {
+        background-color: #35517a;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    button.secondary {
+        background-color: #e4ddd3;
+        color: #35517a;
+    }
+}
+
+.hero {
+    background: linear-gradient(#c2daff, #ebf5ff);
+    height: 160vh;
+
+    & > * {
+        position: absolute;
+    }
+
+    h1 {
+        top: 12.5%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mountain {
+        bottom: 0;
+        // object-fit: contain;
+
+        // width: 100vw;
+        width: 100%;
+        left: 50%;
+        margin-left: -50%;
+    }
+}
+
+.content {
+    @include center-content;
+
+    background-color: #fff6eb;
+    flex-direction: column;
+    height: 432px;
+
+    p {
+        text-align: center;
+    }
+
+    .cta > * {
+        margin: 10px;
+    }
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    a {
+        color: #a4aab3;
+        display: table;
+        padding: 5px 0px;
+    }
+
+    div a:first-of-type {
+        margin-top: 10px;
     }
 }
