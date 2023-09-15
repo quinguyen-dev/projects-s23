@@ -2,25 +2,25 @@
 
 /* TODO: kinda messy */
 .phone {
-    user-select: none;
-    overflow-y: hidden;
+  user-select: none;
+  overflow-y: hidden;
 
-    h1 {
-        font-size: 3rem;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 
-    &-container {
-        @include center-content;
+  &-container {
+    @include center-content;
 
-        align-items: start;
-        flex-direction: column;
+    align-items: start;
+    flex-direction: column;
 
-        background-color: $background-color;
+    background-color: $background-color;
 
-        border-radius: 80px;
-        width: 420px;
-        height: 980px;
+    border-radius: 80px;
+    width: 420px;
+    height: 980px;
 
-        padding: 48px;
-    }
+    padding: 48px;
+  }
 }

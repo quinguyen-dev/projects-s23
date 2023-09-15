@@ -1,7 +1,7 @@
 @use "styles/settings" as *;
 
 .no-page-container {
-    @include center-content;
+  @include center-content;
 
-    flex-direction: column;
+  flex-direction: column;
 }

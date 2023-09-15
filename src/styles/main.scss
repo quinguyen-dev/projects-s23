@@ -10,15 +10,15 @@
 
 /* TODO Look into moving this code into a partial */
 html {
-    font-family: $font-family;
+  font-family: $font-family;
 
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: $background-color;
-    color: $primary-font-color;
-    margin: 0;
+  background-color: $background-color;
+  color: $primary-font-color;
+  margin: 0;
 }
 
 h1,
@@ -27,33 +27,33 @@ h3,
 h4,
 h5,
 h6 {
-    color: $header-font-color;
-    font-weight: bold;
+  color: $header-font-color;
+  font-weight: bold;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 a {
-    color: $primary-font-color;
-    text-decoration: none;
+  color: $primary-font-color;
+  text-decoration: none;
 }
 
 button,
 .button {
-    color: $primary-btn-text-color;
-    font-family: $font-family;
+  color: $primary-btn-text-color;
+  font-family: $font-family;
 
-    padding: 10px 16px;
-    border-radius: 6px;
+  padding: 10px 16px;
+  border-radius: 6px;
 }
 
 .parent {
-    @include center-content;
+  @include center-content;
 
-    height: 100vh;
+  height: 100vh;
 }

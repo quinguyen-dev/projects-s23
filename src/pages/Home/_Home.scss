@@ -1,45 +1,45 @@
 @use "styles/settings" as *;
 
 .home {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .projects {
-    @include reset-list;
+  @include reset-list;
 
-    margin-top: 8px;
+  margin-top: 8px;
 
-    li {
-        padding: 6px 0;
-    }
+  li {
+    padding: 6px 0;
+  }
 
-    a {
-        @include center-content;
+  a {
+    @include center-content;
 
-        justify-content: start;
-        text-decoration: none;
-    }
+    justify-content: start;
+    text-decoration: none;
+  }
 
-    a:before {
-        background: $primary-font-color;
-        content: "";
-        flex: 1;
+  a:before {
+    background: $primary-font-color;
+    content: "";
+    flex: 1;
 
-        height: 1.25px;
-        max-width: 32px;
+    height: 1.25px;
+    max-width: 32px;
 
-        transition: max-width 0.4s ease;
-    }
+    transition: max-width 0.4s ease;
+  }
 
-    a:hover:before {
-        max-width: 64px;
-    }
+  a:hover:before {
+    max-width: 64px;
+  }
 
-    a:not(:hover) {
-        opacity: 0.5;
-    }
+  a:not(:hover) {
+    opacity: 0.5;
+  }
 
-    span {
-        padding-left: 12px;
-    }
+  span {
+    padding-left: 12px;
+  }
 }
